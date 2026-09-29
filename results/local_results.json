@@ -1,0 +1,1134 @@
+{
+  "metadata": {
+    "service": "local",
+    "timestamp": "2026-09-29T03:57:36.586155+00:00",
+    "model": "gpt-4o-mini",
+    "dataset_sha256": "28c4f369a01637a1bf123a6930dfbccd9e6c0015cd31051fb8ed857ab891ea2d",
+    "tasks_sha256": "299f0e3d8450a11debef72eba000c6d33e1183e35b870be83d58c02f36bb838b",
+    "run_status": "complete",
+    "requested_examples": 28,
+    "completed_examples": 28
+  },
+  "records": [
+    {
+      "dataset_id": "snips_test_000",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "AddToPlaylist",
+      "actual": "AddToPlaylist",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "AddToPlaylist",
+        "probabilities": {
+          "AddToPlaylist": 1.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 3989.84770901734,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_000",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 3989.84770901734,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_021",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "AddToPlaylist",
+      "actual": "AddToPlaylist",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "AddToPlaylist",
+        "probabilities": {
+          "AddToPlaylist": 1.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2053.3237499766983,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_021",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 2053.3237499766983,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_062",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "AddToPlaylist",
+      "actual": "AddToPlaylist",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "AddToPlaylist",
+        "probabilities": {
+          "AddToPlaylist": 1.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 1957.1770839975215,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_062",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 1957.1770839975215,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_068",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "AddToPlaylist",
+      "actual": "AddToPlaylist",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "AddToPlaylist",
+        "probabilities": {
+          "AddToPlaylist": 1.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2322.9025419568643,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_068",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 2322.9025419568643,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_006",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "BookRestaurant",
+      "actual": "BookRestaurant",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "BookRestaurant",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 1.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 19975.90433404548,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_006",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.9,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.9,
+        "answer": true,
+        "confidence": 0.9
+      },
+      "latency_ms": 19975.90433404548,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_017",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "BookRestaurant",
+      "actual": "BookRestaurant",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "BookRestaurant",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 1.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 1788.0877919960767,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_017",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.9,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.9,
+        "answer": true,
+        "confidence": 0.9
+      },
+      "latency_ms": 1788.0877919960767,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_048",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "BookRestaurant",
+      "actual": "BookRestaurant",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "BookRestaurant",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 1.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 3425.1737499726005,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_048",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.8,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.8,
+        "answer": true,
+        "confidence": 0.8
+      },
+      "latency_ms": 3425.1737499726005,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_051",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "BookRestaurant",
+      "actual": "BookRestaurant",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "BookRestaurant",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 1.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2722.927291993983,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_051",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.9,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.9,
+        "answer": true,
+        "confidence": 0.9
+      },
+      "latency_ms": 2722.927291993983,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_003",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "GetWeather",
+      "actual": "GetWeather",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "GetWeather",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 1.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 1813.9278329908848,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_003",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.85,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.85,
+        "answer": true,
+        "confidence": 0.85
+      },
+      "latency_ms": 1813.9278329908848,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_038",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "GetWeather",
+      "actual": "GetWeather",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "GetWeather",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 1.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2114.446208055597,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_038",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.9,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.9,
+        "answer": true,
+        "confidence": 0.9
+      },
+      "latency_ms": 2114.446208055597,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_039",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "GetWeather",
+      "actual": "GetWeather",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "GetWeather",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 1.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2081.697624991648,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_039",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.75,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.75,
+        "answer": true,
+        "confidence": 0.75
+      },
+      "latency_ms": 2081.697624991648,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_045",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "GetWeather",
+      "actual": "GetWeather",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "GetWeather",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 1.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2183.796875004191,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_045",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.95,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.95,
+        "answer": true,
+        "confidence": 0.95
+      },
+      "latency_ms": 2183.796875004191,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_004",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "PlayMusic",
+      "actual": "PlayMusic",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "PlayMusic",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 1.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2017.3222500015981,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_004",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 2017.3222500015981,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_032",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "PlayMusic",
+      "actual": "PlayMusic",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "PlayMusic",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 1.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 4389.760583988391,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_032",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 4389.760583988391,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_044",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "PlayMusic",
+      "actual": "PlayMusic",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "PlayMusic",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 1.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 11164.058415975887,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_044",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 11164.058415975887,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_079",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "PlayMusic",
+      "actual": "PlayMusic",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "PlayMusic",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 1.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 1840.070000034757,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_079",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 1840.070000034757,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_020",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "RateBook",
+      "actual": "RateBook",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "RateBook",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 1.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2100.840082974173,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_020",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 2100.840082974173,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_056",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "RateBook",
+      "actual": "RateBook",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "RateBook",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 1.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2044.3093330250122,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_056",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 2044.3093330250122,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_072",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "RateBook",
+      "actual": "RateBook",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "RateBook",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 1.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2167.0153330196626,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_072",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 2167.0153330196626,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_105",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "RateBook",
+      "actual": "RateBook",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "RateBook",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 1.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 1990.1858340017498,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_105",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 1990.1858340017498,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_014",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "SearchCreativeWork",
+      "actual": "SearchScreeningEvent",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "SearchScreeningEvent",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 1.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 16781.684958026744,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_014",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 16781.684958026744,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_016",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "SearchCreativeWork",
+      "actual": "SearchCreativeWork",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "SearchCreativeWork",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 1.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 1883.4480000077747,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_016",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 1883.4480000077747,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_035",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "SearchCreativeWork",
+      "actual": "SearchCreativeWork",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "SearchCreativeWork",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 1.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2631.70645898208,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_035",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 2631.70645898208,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_080",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "SearchCreativeWork",
+      "actual": "SearchCreativeWork",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "SearchCreativeWork",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 1.0,
+          "SearchScreeningEvent": 0.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2004.8197499709204,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_080",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": false,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 2004.8197499709204,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_010",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "SearchScreeningEvent",
+      "actual": "SearchScreeningEvent",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "SearchScreeningEvent",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 1.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 1998.2912089908496,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_010",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": false,
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.0,
+        "answer": false,
+        "confidence": 1.0
+      },
+      "latency_ms": 1998.2912089908496,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_058",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "SearchScreeningEvent",
+      "actual": "SearchScreeningEvent",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "SearchScreeningEvent",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 1.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 1974.3984580272809,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_058",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": true,
+      "native_confidence": 0.75,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.75,
+        "answer": true,
+        "confidence": 0.75
+      },
+      "latency_ms": 1974.3984580272809,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_223",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "SearchScreeningEvent",
+      "actual": "SearchScreeningEvent",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "SearchScreeningEvent",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 1.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2290.562082955148,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_223",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": false,
+      "native_confidence": 0.9,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.1,
+        "answer": false,
+        "confidence": 0.9
+      },
+      "latency_ms": 2290.562082955148,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_368",
+      "question_name": "intent",
+      "question_type": "choice",
+      "expected": "SearchScreeningEvent",
+      "actual": "SearchScreeningEvent",
+      "native_confidence": 1.0,
+      "raw_answer": {
+        "type": "choice",
+        "choice": "SearchScreeningEvent",
+        "probabilities": {
+          "AddToPlaylist": 0.0,
+          "BookRestaurant": 0.0,
+          "GetWeather": 0.0,
+          "PlayMusic": 0.0,
+          "RateBook": 0.0,
+          "SearchCreativeWork": 0.0,
+          "SearchScreeningEvent": 1.0
+        },
+        "confidence": 1.0
+      },
+      "latency_ms": 2015.0163340149447,
+      "error": null
+    },
+    {
+      "dataset_id": "snips_test_368",
+      "question_name": "mentions_location",
+      "question_type": "noul",
+      "expected": true,
+      "actual": false,
+      "native_confidence": 0.7,
+      "raw_answer": {
+        "type": "noul",
+        "noul": 0.3,
+        "answer": false,
+        "confidence": 0.7
+      },
+      "latency_ms": 2015.0163340149447,
+      "error": null
+    }
+  ]
+}

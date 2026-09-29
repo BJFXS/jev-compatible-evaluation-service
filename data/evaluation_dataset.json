@@ -1,0 +1,833 @@
+[
+  {
+    "id": "snips_test_000",
+    "state": {
+      "utterance": "add sabrina salerno to the grime instrumentals playlist"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 0
+    },
+    "source_labels": {
+      "intent": "AddToPlaylist",
+      "slots": [
+        "O",
+        "B-artist",
+        "I-artist",
+        "O",
+        "O",
+        "B-playlist",
+        "I-playlist",
+        "O"
+      ]
+    },
+    "expected": {
+      "intent": "AddToPlaylist",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_021",
+    "state": {
+      "utterance": "add the song don t drink the water to my playlist"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 21
+    },
+    "source_labels": {
+      "intent": "AddToPlaylist",
+      "slots": [
+        "O",
+        "O",
+        "B-music_item",
+        "B-playlist",
+        "I-playlist",
+        "I-playlist",
+        "I-playlist",
+        "I-playlist",
+        "O",
+        "B-playlist_owner",
+        "O"
+      ]
+    },
+    "expected": {
+      "intent": "AddToPlaylist",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_062",
+    "state": {
+      "utterance": "please add a track to my playlist called this is coti"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 62
+    },
+    "source_labels": {
+      "intent": "AddToPlaylist",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "B-music_item",
+        "O",
+        "B-playlist_owner",
+        "O",
+        "O",
+        "B-playlist",
+        "I-playlist",
+        "I-playlist"
+      ]
+    },
+    "expected": {
+      "intent": "AddToPlaylist",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_068",
+    "state": {
+      "utterance": "add this song to blues roots"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 68
+    },
+    "source_labels": {
+      "intent": "AddToPlaylist",
+      "slots": [
+        "O",
+        "O",
+        "B-music_item",
+        "O",
+        "B-playlist",
+        "I-playlist"
+      ]
+    },
+    "expected": {
+      "intent": "AddToPlaylist",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_006",
+    "state": {
+      "utterance": "can you get me reservations for a highly rated restaurant in seychelles"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 6
+    },
+    "source_labels": {
+      "intent": "BookRestaurant",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-sort",
+        "I-sort",
+        "B-restaurant_type",
+        "O",
+        "B-country"
+      ]
+    },
+    "expected": {
+      "intent": "BookRestaurant",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_017",
+    "state": {
+      "utterance": "make me a reservation in south carolina"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 17
+    },
+    "source_labels": {
+      "intent": "BookRestaurant",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-state",
+        "I-state"
+      ]
+    },
+    "expected": {
+      "intent": "BookRestaurant",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_048",
+    "state": {
+      "utterance": "book a table for 2 at a restaurant in follett"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 48
+    },
+    "source_labels": {
+      "intent": "BookRestaurant",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-party_size_number",
+        "O",
+        "O",
+        "B-restaurant_type",
+        "O",
+        "B-city"
+      ]
+    },
+    "expected": {
+      "intent": "BookRestaurant",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_051",
+    "state": {
+      "utterance": "find a reservation at a restaurant that serves gougère in laneville with a party of nine"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 51
+    },
+    "source_labels": {
+      "intent": "BookRestaurant",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-restaurant_type",
+        "O",
+        "O",
+        "B-served_dish",
+        "O",
+        "B-city",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-party_size_number"
+      ]
+    },
+    "expected": {
+      "intent": "BookRestaurant",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_003",
+    "state": {
+      "utterance": "will it snow in mt on june 13  2038"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 3
+    },
+    "source_labels": {
+      "intent": "GetWeather",
+      "slots": [
+        "O",
+        "O",
+        "B-condition_description",
+        "O",
+        "B-state",
+        "O",
+        "B-timeRange",
+        "I-timeRange",
+        "I-timeRange"
+      ]
+    },
+    "expected": {
+      "intent": "GetWeather",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_038",
+    "state": {
+      "utterance": "what will the weather be in lago vista on october fourteenth  2022"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 38
+    },
+    "source_labels": {
+      "intent": "GetWeather",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-city",
+        "I-city",
+        "O",
+        "B-timeRange",
+        "I-timeRange",
+        "I-timeRange"
+      ]
+    },
+    "expected": {
+      "intent": "GetWeather",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_039",
+    "state": {
+      "utterance": "weather next year in canada"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 39
+    },
+    "source_labels": {
+      "intent": "GetWeather",
+      "slots": [
+        "O",
+        "B-timeRange",
+        "I-timeRange",
+        "O",
+        "B-country"
+      ]
+    },
+    "expected": {
+      "intent": "GetWeather",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_045",
+    "state": {
+      "utterance": "what is the weather going to be like in klondike gold rush national historical park on february the 28th  2034"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 45
+    },
+    "source_labels": {
+      "intent": "GetWeather",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-geographic_poi",
+        "I-geographic_poi",
+        "I-geographic_poi",
+        "I-geographic_poi",
+        "I-geographic_poi",
+        "I-geographic_poi",
+        "O",
+        "B-timeRange",
+        "I-timeRange",
+        "I-timeRange",
+        "I-timeRange"
+      ]
+    },
+    "expected": {
+      "intent": "GetWeather",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_004",
+    "state": {
+      "utterance": "play signe anderson chant music that is newest"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 4
+    },
+    "source_labels": {
+      "intent": "PlayMusic",
+      "slots": [
+        "O",
+        "B-artist",
+        "I-artist",
+        "B-music_item",
+        "O",
+        "O",
+        "O",
+        "B-sort"
+      ]
+    },
+    "expected": {
+      "intent": "PlayMusic",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_032",
+    "state": {
+      "utterance": "play some sixties music"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 32
+    },
+    "source_labels": {
+      "intent": "PlayMusic",
+      "slots": [
+        "O",
+        "O",
+        "B-year",
+        "O"
+      ]
+    },
+    "expected": {
+      "intent": "PlayMusic",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_044",
+    "state": {
+      "utterance": "play a melody from elmer bernstein"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 44
+    },
+    "source_labels": {
+      "intent": "PlayMusic",
+      "slots": [
+        "O",
+        "O",
+        "B-music_item",
+        "O",
+        "B-artist",
+        "I-artist"
+      ]
+    },
+    "expected": {
+      "intent": "PlayMusic",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_079",
+    "state": {
+      "utterance": "play me a top-ten song by phil ochs on groove shark"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 79
+    },
+    "source_labels": {
+      "intent": "PlayMusic",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "B-sort",
+        "B-music_item",
+        "O",
+        "B-artist",
+        "I-artist",
+        "O",
+        "B-service",
+        "I-service"
+      ]
+    },
+    "expected": {
+      "intent": "PlayMusic",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_020",
+    "state": {
+      "utterance": "rate the current novel four of 6 stars"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 20
+    },
+    "source_labels": {
+      "intent": "RateBook",
+      "slots": [
+        "O",
+        "O",
+        "B-object_select",
+        "B-object_type",
+        "B-rating_value",
+        "O",
+        "B-best_rating",
+        "B-rating_unit"
+      ]
+    },
+    "expected": {
+      "intent": "RateBook",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_056",
+    "state": {
+      "utterance": "rate this current novel 1 stars"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 56
+    },
+    "source_labels": {
+      "intent": "RateBook",
+      "slots": [
+        "O",
+        "O",
+        "B-object_select",
+        "B-object_type",
+        "B-rating_value",
+        "B-rating_unit"
+      ]
+    },
+    "expected": {
+      "intent": "RateBook",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_072",
+    "state": {
+      "utterance": "give 1 out of 6 points to this novel"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 72
+    },
+    "source_labels": {
+      "intent": "RateBook",
+      "slots": [
+        "O",
+        "B-rating_value",
+        "O",
+        "O",
+        "B-best_rating",
+        "B-rating_unit",
+        "O",
+        "B-object_select",
+        "B-object_type"
+      ]
+    },
+    "expected": {
+      "intent": "RateBook",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_105",
+    "state": {
+      "utterance": "a day no pigs would die deserves a best rating of 6 and a value of 4"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 105
+    },
+    "source_labels": {
+      "intent": "RateBook",
+      "slots": [
+        "B-object_name",
+        "I-object_name",
+        "I-object_name",
+        "I-object_name",
+        "I-object_name",
+        "I-object_name",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-best_rating",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-rating_value"
+      ]
+    },
+    "expected": {
+      "intent": "RateBook",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_014",
+    "state": {
+      "utterance": "where can i purchase the tv show time for heroes"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 14
+    },
+    "source_labels": {
+      "intent": "SearchCreativeWork",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-object_type",
+        "I-object_type",
+        "B-object_name",
+        "I-object_name",
+        "I-object_name"
+      ]
+    },
+    "expected": {
+      "intent": "SearchCreativeWork",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_016",
+    "state": {
+      "utterance": "please search the young warriors game"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 16
+    },
+    "source_labels": {
+      "intent": "SearchCreativeWork",
+      "slots": [
+        "O",
+        "O",
+        "B-object_name",
+        "I-object_name",
+        "I-object_name",
+        "B-object_type"
+      ]
+    },
+    "expected": {
+      "intent": "SearchCreativeWork",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_035",
+    "state": {
+      "utterance": "get the video game of the chipmunk song"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 35
+    },
+    "source_labels": {
+      "intent": "SearchCreativeWork",
+      "slots": [
+        "O",
+        "O",
+        "B-object_type",
+        "I-object_type",
+        "O",
+        "B-object_name",
+        "I-object_name",
+        "I-object_name"
+      ]
+    },
+    "expected": {
+      "intent": "SearchCreativeWork",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_080",
+    "state": {
+      "utterance": "find a video game called family dog"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 80
+    },
+    "source_labels": {
+      "intent": "SearchCreativeWork",
+      "slots": [
+        "O",
+        "O",
+        "B-object_type",
+        "I-object_type",
+        "O",
+        "B-object_name",
+        "I-object_name"
+      ]
+    },
+    "expected": {
+      "intent": "SearchCreativeWork",
+      "mentions_location": false
+    }
+  },
+  {
+    "id": "snips_test_010",
+    "state": {
+      "utterance": "what movies are playing at mann theatres"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 10
+    },
+    "source_labels": {
+      "intent": "SearchScreeningEvent",
+      "slots": [
+        "O",
+        "B-movie_type",
+        "O",
+        "O",
+        "O",
+        "B-location_name",
+        "I-location_name"
+      ]
+    },
+    "expected": {
+      "intent": "SearchScreeningEvent",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_058",
+    "state": {
+      "utterance": "is unbeatable harold at century theatres"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 58
+    },
+    "source_labels": {
+      "intent": "SearchScreeningEvent",
+      "slots": [
+        "O",
+        "B-movie_name",
+        "I-movie_name",
+        "O",
+        "B-location_name",
+        "I-location_name"
+      ]
+    },
+    "expected": {
+      "intent": "SearchScreeningEvent",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_223",
+    "state": {
+      "utterance": "i d like to see movie schedules for kerasotes theatres"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 223
+    },
+    "source_labels": {
+      "intent": "SearchScreeningEvent",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-object_type",
+        "I-object_type",
+        "O",
+        "B-location_name",
+        "I-location_name"
+      ]
+    },
+    "expected": {
+      "intent": "SearchScreeningEvent",
+      "mentions_location": true
+    }
+  },
+  {
+    "id": "snips_test_368",
+    "state": {
+      "utterance": "i d like to know when i can see the taking of flight 847: the uli derickson story at amco entertainment"
+    },
+    "source": {
+      "dataset": "bkonkle/snips-joint-intent",
+      "split": "test",
+      "test_index": 368
+    },
+    "source_labels": {
+      "intent": "SearchScreeningEvent",
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-movie_name",
+        "I-movie_name",
+        "I-movie_name",
+        "I-movie_name",
+        "I-movie_name",
+        "I-movie_name",
+        "I-movie_name",
+        "I-movie_name",
+        "I-movie_name",
+        "O",
+        "B-location_name",
+        "I-location_name"
+      ]
+    },
+    "expected": {
+      "intent": "SearchScreeningEvent",
+      "mentions_location": true
+    }
+  }
+]

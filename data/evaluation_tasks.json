@@ -1,0 +1,23 @@
+{
+  "intent": {
+    "type": "choice",
+    "instructions": "What is the user's intent?",
+    "criteria": {
+      "AddToPlaylist": "The user wants to add a song, artist, album, or other music item to a playlist.",
+      "BookRestaurant": "The user wants to book or reserve a restaurant or table.",
+      "GetWeather": "The user is asking for weather information or a weather forecast.",
+      "PlayMusic": "The user wants music, a song, an artist, or a playlist to be played.",
+      "RateBook": "The user wants to give a rating to a book or another written work.",
+      "SearchCreativeWork": "The user wants to find or search for a creative work such as a song, game, television show, picture, or other work.",
+      "SearchScreeningEvent": "The user wants to find a movie screening, showtime, movie schedule, or cinema showing."
+    }
+  },
+  "mentions_location": {
+    "type": "noul",
+    "instructions": "Does the utterance explicitly mention a location?",
+    "criteria": {
+      "true": "The utterance explicitly refers to a city, state, country, current location, named venue or location, geographic point of interest, or another point of interest.",
+      "false": "The utterance does not explicitly refer to any such location."
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tests/fixtures/jev_contract/probe_live*.json
+.venv/
+.DS_Store
+note.md

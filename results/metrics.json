@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "dataset_sha256": "28c4f369a01637a1bf123a6930dfbccd9e6c0015cd31051fb8ed857ab891ea2d",
+    "tasks_sha256": "299f0e3d8450a11debef72eba000c6d33e1183e35b870be83d58c02f36bb838b",
+    "generated_at": "2026-09-29T03:59:17.132457+00:00",
+    "alignment_key": [
+      "dataset_id",
+      "question_name"
+    ]
+  },
+  "jev": {
+    "intent": {
+      "end_to_end_accuracy": 1.0,
+      "valid_only_accuracy": 1.0,
+      "coverage": 1.0,
+      "correct": 28,
+      "incorrect": 0,
+      "failures": 0,
+      "correct_count": 28,
+      "incorrect_count": 0,
+      "failure_count": 0,
+      "valid_prediction_count": 28,
+      "denominator": 28,
+      "confidence": {
+        "kind": "jev_native_choice_confidence",
+        "average_confidence_correct": 0.9914285714285714,
+        "average_confidence_incorrect": null,
+        "correct_confidence_count": 28,
+        "incorrect_confidence_count": 0
+      }
+    },
+    "mentions_location": {
+      "end_to_end_accuracy": 1.0,
+      "valid_only_accuracy": 1.0,
+      "coverage": 1.0,
+      "correct": 28,
+      "incorrect": 0,
+      "failures": 0,
+      "correct_count": 28,
+      "incorrect_count": 0,
+      "failure_count": 0,
+      "valid_prediction_count": 28,
+      "denominator": 28,
+      "confidence": {
+        "kind": "not_observed_for_jev_noul",
+        "average_confidence_correct": null,
+        "average_confidence_incorrect": null,
+        "correct_confidence_count": 0,
+        "incorrect_confidence_count": 0
+      },
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positive": 12,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 16,
+      "zero_division_policy": "null"
+    },
+    "overall": {
+      "correct": 56,
+      "total": 56,
+      "accuracy": 1.0
+    }
+  },
+  "local": {
+    "intent": {
+      "end_to_end_accuracy": 0.9642857142857143,
+      "valid_only_accuracy": 0.9642857142857143,
+      "coverage": 1.0,
+      "correct": 27,
+      "incorrect": 1,
+      "failures": 0,
+      "correct_count": 27,
+      "incorrect_count": 1,
+      "failure_count": 0,
+      "valid_prediction_count": 28,
+      "denominator": 28,
+      "confidence": {
+        "kind": "local_heuristic_choice_confidence",
+        "average_confidence_correct": 1.0,
+        "average_confidence_incorrect": 1.0,
+        "correct_confidence_count": 27,
+        "incorrect_confidence_count": 1
+      }
+    },
+    "mentions_location": {
+      "end_to_end_accuracy": 0.8928571428571429,
+      "valid_only_accuracy": 0.8928571428571429,
+      "coverage": 1.0,
+      "correct": 25,
+      "incorrect": 3,
+      "failures": 0,
+      "correct_count": 25,
+      "incorrect_count": 3,
+      "failure_count": 0,
+      "valid_prediction_count": 28,
+      "denominator": 28,
+      "confidence": {
+        "kind": "local_derived_noul_confidence",
+        "average_confidence_correct": 0.948,
+        "average_confidence_incorrect": 0.8666666666666667,
+        "correct_confidence_count": 25,
+        "incorrect_confidence_count": 3
+      },
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "true_positive": 9,
+      "false_positive": 0,
+      "false_negative": 3,
+      "true_negative": 16,
+      "zero_division_policy": "null"
+    },
+    "overall": {
+      "correct": 52,
+      "total": 56,
+      "accuracy": 0.9285714285714286
+    }
+  },
+  "comparison": {
+    "both_correct": 52,
+    "jev_correct_local_wrong": 4,
+    "local_correct_jev_wrong": 0,
+    "both_wrong": 0,
+    "one_or_both_failed": 0,
+    "jev_missing_records": [],
+    "local_missing_records": []
+  },
+  "errors": [
+    {
+      "dataset_id": "snips_test_014",
+      "utterance": "where can i purchase the tv show time for heroes",
+      "question_name": "intent",
+      "expected": "SearchCreativeWork",
+      "jev_actual": "SearchCreativeWork",
+      "local_actual": "SearchScreeningEvent",
+      "jev_confidence": 0.96,
+      "local_confidence": 1.0,
+      "jev_error": null,
+      "local_error": null
+    },
+    {
+      "dataset_id": "snips_test_010",
+      "utterance": "what movies are playing at mann theatres",
+      "question_name": "mentions_location",
+      "expected": true,
+      "jev_actual": true,
+      "local_actual": false,
+      "jev_confidence": null,
+      "local_confidence": 1.0,
+      "jev_error": null,
+      "local_error": null
+    },
+    {
+      "dataset_id": "snips_test_223",
+      "utterance": "i d like to see movie schedules for kerasotes theatres",
+      "question_name": "mentions_location",
+      "expected": true,
+      "jev_actual": true,
+      "local_actual": false,
+      "jev_confidence": null,
+      "local_confidence": 0.9,
+      "jev_error": null,
+      "local_error": null
+    },
+    {
+      "dataset_id": "snips_test_368",
+      "utterance": "i d like to know when i can see the taking of flight 847: the uli derickson story at amco entertainment",
+      "question_name": "mentions_location",
+      "expected": true,
+      "jev_actual": true,
+      "local_actual": false,
+      "jev_confidence": null,
+      "local_confidence": 0.7,
+      "jev_error": null,
+      "local_error": null
+    }
+  ]
+}

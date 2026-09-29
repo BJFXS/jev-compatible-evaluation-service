@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "mode": "dry-run",
+    "source": "synthetic dry-run (no network)"
+  },
+  "records": [
+    {
+      "name": "choice",
+      "expected_kind": "success",
+      "request_body": {
+        "state": "Please arrange a table for two this evening.",
+        "model": "jev-latest",
+        "questions": {
+          "routing": {
+            "type": "choice",
+            "instructions": "Choose the request category.",
+            "criteria": {
+              "reserve_table": "The user wants to reserve a table.",
+              "check_hours": "The user asks for opening hours."
+            }
+          }
+        }
+      },
+      "timestamp": "2026-09-28T20:07:28.901861+00:00",
+      "source": "synthetic dry-run (no network)",
+      "http_status": null,
+      "response_body": null,
+      "error": null
+    },
+    {
+      "name": "noul",
+      "expected_kind": "success",
+      "request_body": {
+        "state": {
+          "message": "Is the library open near Union Square?"
+        },
+        "model": "jev-latest",
+        "questions": {
+          "mentions_place": {
+            "type": "noul",
+            "instructions": "Does the message explicitly mention a place?",
+            "criteria": {
+              "true": "It explicitly names or refers to a place.",
+              "false": "It does not explicitly name or refer to a place."
+            }
+          }
+        }
+      },
+      "timestamp": "2026-09-28T20:07:28.902486+00:00",
+      "source": "synthetic dry-run (no network)",
+      "http_status": null,
+      "response_body": null,
+      "error": null
+    },
+    {
+      "name": "multiple_questions",
+      "expected_kind": "success",
+      "request_body": {
+        "state": [
+          "Could you tell me the opening hours for Harbor Cafe?"
+        ],
+        "model": "jev-latest",
+        "questions": {
+          "routing": {
+            "type": "choice",
+            "instructions": "Choose the request category.",
+            "criteria": {
+              "reserve_table": "The user wants to reserve a table.",
+              "check_hours": "The user asks for opening hours."
+            }
+          },
+          "mentions_place": {
+            "type": "noul",
+            "instructions": "Does the message explicitly mention a place?",
+            "criteria": {
+              "true": "It explicitly names or refers to a place.",
+              "false": "It does not explicitly name or refer to a place."
+            }
+          }
+        }
+      },
+      "timestamp": "2026-09-28T20:07:28.902520+00:00",
+      "source": "synthetic dry-run (no network)",
+      "http_status": null,
+      "response_body": null,
+      "error": null
+    },
+    {
+      "name": "missing_state",
+      "expected_kind": "client_error",
+      "request_body": {
+        "model": "jev-latest",
+        "questions": {
+          "routing": {
+            "type": "choice",
+            "instructions": "Choose the request category.",
+            "criteria": {
+              "reserve_table": "The user wants to reserve a table.",
+              "check_hours": "The user asks for opening hours."
+            }
+          }
+        }
+      },
+      "timestamp": "2026-09-28T20:07:28.902533+00:00",
+      "source": "synthetic dry-run (no network)",
+      "http_status": null,
+      "response_body": null,
+      "error": null
+    }
+  ]
+}
