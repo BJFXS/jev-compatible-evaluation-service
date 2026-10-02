@@ -1,4 +1,4 @@
-"""Controlled errors shared by the local evaluation layers."""
+"""Foundation-layer controlled errors shared by local evaluation layers."""
 
 
 class ServiceError(Exception):

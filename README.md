@@ -202,7 +202,7 @@ curl -X POST "http://127.0.0.1:8000/v1/systemone" \
     "questions": {
       "release_decision": {
         "type": "choice",
-        "instruction": "What should happen next?",
+        "instructions": "What should happen next?",
         "criteria": {
           "approve": "The release is ready to proceed.",
           "revise": "The release still needs additional work."
@@ -210,7 +210,7 @@ curl -X POST "http://127.0.0.1:8000/v1/systemone" \
       },
       "has_confirmation": {
         "type": "noul",
-        "instruction": "Does the state explicitly confirm successful validation?"
+        "instructions": "Does the state explicitly confirm successful validation?"
       }
     }
   }'
@@ -252,7 +252,7 @@ The exact model output can vary. The important part is the typed response contra
 A Choice question contains:
 
 - `type: "choice"`
-- an instruction
+- `instructions`, which describes what to evaluate
 - a mapping of option names to descriptions
 
 Example:
@@ -260,7 +260,7 @@ Example:
 ```json
 {
   "type": "choice",
-  "instruction": "What should happen next?",
+  "instructions": "What should happen next?",
   "criteria": {
     "approve": "Proceed with the release.",
     "revise": "Make additional changes first."
@@ -298,7 +298,7 @@ The local confidence is the maximum normalized probability.
 A Noul question contains:
 
 - `type: "noul"`
-- an instruction
+- `instructions`, which describes what to evaluate
 - optional `true` / `false` criteria
 
 Example:
@@ -306,7 +306,7 @@ Example:
 ```json
 {
   "type": "noul",
-  "instruction": "Does the state explicitly mention a location?"
+  "instructions": "Does the state explicitly mention a location?"
 }
 ```
 
@@ -338,7 +338,9 @@ confidence = max(p, 1 - p)
 
 # Architecture
 
-The service is intentionally small and split into four layers.
+The service is intentionally small and split into five layers. The Foundation Layer is
+listed second because it supplies common building blocks to the other layers; it is
+shared infrastructure, not an extra request-processing hop.
 
 ```text
 Client
@@ -376,6 +378,10 @@ Client
               |
               v
         HTTP response
+
+Foundation Layer (shared by the layers above)
+  app/config.py  app/schemas.py  app/errors.py
+  configuration, data contracts/validation, controlled exceptions
 ```
 
 ## 1. Entry Layer
@@ -391,7 +397,27 @@ Responsibilities:
 
 It does not contain provider logic.
 
-## 2. Service Layer
+## 2. Foundation Layer
+
+`app/config.py`, `app/schemas.py`, and `app/errors.py`
+
+The Foundation Layer provides the shared rules and types that keep the system
+consistent:
+
+- **Configuration** (`config.py`) reads settings for the OpenAI model, optional
+  API base URL, per-call timeout, and maximum retry count.
+- **Schemas and validation** (`schemas.py`) define the request, model-output, and
+  response contracts. `state` may be a string, object, or list; `model` accepts
+  only `gpt-local`; `questions` is a non-empty named-question map; Choice requires
+  at least two criteria; and Noul criteria, when supplied, must be exactly `true`
+  and `false`. Unknown fields in requests, questions, model outputs, and typed
+  answers are rejected.
+- **Controlled errors** (`errors.py`) give all layers a shared exception hierarchy.
+  They prevent raw OpenAI SDK or Python exceptions from becoming part of the
+  public API contract. The Entry Layer converts these controlled errors into HTTP
+  status codes and safe JSON responses.
+
+## 3. Service Layer
 
 `app/service.py`
 
@@ -406,7 +432,7 @@ Responsibilities:
 
 Retry ownership is centralized here so a request does not accidentally accumulate independent retry budgets across layers.
 
-## 3. Model Layer
+## 4. Model Layer
 
 `app/model.py`
 
@@ -426,7 +452,7 @@ max_retries = 0
 
 so retry policy remains under Service-layer control.
 
-## 4. Normalization Layer
+## 5. Normalization Layer
 
 `app/normalization.py`
 
@@ -455,9 +481,9 @@ Normalization is pure:
 │   ├── service.py              # orchestration and retry ownership
 │   ├── model.py                # provider-neutral evaluator + OpenAI adapter
 │   ├── normalization.py        # semantic validation and normalization
-│   ├── schemas.py              # request/response and model-output schemas
-│   ├── errors.py               # controlled service error hierarchy
-│   └── config.py               # environment-backed settings
+│   ├── config.py               # Foundation: environment-backed settings
+│   ├── schemas.py              # Foundation: shared contracts and validation
+│   └── errors.py               # Foundation: controlled error hierarchy
 │
 ├── data/
 │   ├── original/               # source SNIPS files
@@ -507,14 +533,16 @@ app.main:app
 
 # Reliability and Error Handling
 
-The service uses several validation layers instead of trusting model output directly.
+The Foundation Layer supplies the shared schemas and controlled errors used by the
+validation and error-handling path below. The service uses several validation steps
+instead of trusting model output directly.
 
 ```text
 Prompt constraints
       ↓
 Structured Outputs
       ↓
-Pydantic validation
+Foundation schema validation (Pydantic)
       ↓
 Semantic validation
       ↓
@@ -543,7 +571,7 @@ Non-retryable conditions include cases such as configuration/authentication fail
 
 ## Public error contract
 
-Service errors are returned in a stable shape:
+Foundation-layer controlled errors are returned by the Entry Layer in a stable shape:
 
 ```json
 {

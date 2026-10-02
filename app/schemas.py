@@ -1,4 +1,4 @@
-"""Pydantic schemas for the local SystemOne request and response contract."""
+"""Foundation-layer Pydantic schemas for local SystemOne data contracts."""
 
 from __future__ import annotations
 

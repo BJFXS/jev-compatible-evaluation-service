@@ -1,4 +1,4 @@
-"""Environment-backed configuration with no import-time credential checks."""
+"""Foundation-layer configuration with no import-time credential checks."""
 
 from __future__ import annotations
 
